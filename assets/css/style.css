@@ -141,7 +141,7 @@ sup{color:#000C2D;}
 .link-brands-content {justify-content: space-between;max-width: 1320px;display: flex;margin: auto;align-items: center;height: 28px}
 .link-brands-right a {padding: 7px 14px;color: #fff}
 .link-brands-left a {padding: 7px 10px;color: #fff}
-.link-brands-left a:nth-child(1):after {content: '|';position: relative;left: 11px}
+.link-brands-left a:nth-child(1):after {position: relative;left: 11px}
 @media screen and (max-width: 1126px) {.link-brands {display:none}}
 
 /*sticky*/
@@ -178,7 +178,7 @@ h1.logo{font-weight:700;font-size:30px;line-height:1;margin:0;}
 .line-dots::after{content:'';height:1px;width:100%;border-bottom:dotted 1px #222;position:absolute;top:2px;left:0;}
 button.search-icon{border:none;background:none;padding:0;font-weight:500;line-height:1;}
 .header-social-network{line-height:1}
-.header-social-network .list-inline-item a{background:var(--color-primary);width:24px;display:block;height:24px;border-radius:30px;line-height:24px;text-align:center;font-size:11px;color:#fff!important;}
+.header-social-network .list-inline-item a{display:block;line-height:24px;text-align:center;font-size:11px;color:#fff!important;}
 .header-social-network .list-inline-item:not(:last-child){margin-right:7px}
 /*Offcanvas Sidebar*/
 #off-canvas-toggle span,
