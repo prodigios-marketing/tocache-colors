@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Eliminar la extensión .html de las URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+# Redirigir las solicitudes de URLs con .html a las URLs sin .html
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+# Redirigir a 404.html cuando no se encuentra una URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /404.html [L]
